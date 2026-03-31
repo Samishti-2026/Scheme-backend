@@ -39,32 +39,44 @@ export class TenantsConnectionService implements OnModuleDestroy {
     const decrypted = isEnc ? this.cryptoService.decrypt(connectionUri) : connectionUri;
     // Never log the decrypted URI — it contains credentials
 
-    // If it's a full postgresql:// URI, extract just the database name for the DataSource config
-    let activeDbName = decrypted;
-    if (decrypted?.startsWith('postgresql://') || decrypted?.startsWith('postgres://')) {
-      activeDbName = new URL(decrypted).pathname.replace('/', '');
-      logger.debug(`Extracted DB name from URI: "${activeDbName}"`, { context: CTX });
+    const isFullUri = decrypted?.startsWith('postgresql://') || decrypted?.startsWith('postgres://');
+
+    let options: DataSourceOptions;
+
+    if (isFullUri) {
+      // Use the full URI directly — host, port, user, password, db all come from it
+      const parsed = new URL(decrypted);
+      logger.info(`Connecting via full URI to ${parsed.hostname}${parsed.pathname}`, { context: CTX, tenantId });
+
+      options = {
+        type: 'postgres',
+        url: decrypted,
+        ssl: { rejectUnauthorized: false },
+        entities: [Scheme, SchemeConfig, Customer, Material, Billing, Payment],
+        synchronize: false,
+      };
+    } else {
+      // Legacy: just a DB name, use env-configured host
+      const activeDbName = decrypted || `tenant_${tenantId}`;
+      await this.ensureDatabaseExists(activeDbName);
+
+      const host = this.configService.get<string>('DB_HOST', 'localhost');
+      const port = this.configService.get<number>('DB_PORT', 5432);
+      const user = this.configService.get<string>('DB_USERNAME', 'postgres');
+
+      logger.info(`Connecting to ${host}:${port}/${activeDbName}`, { context: CTX, tenantId });
+
+      options = {
+        type: 'postgres',
+        host,
+        port,
+        username: user,
+        password: this.configService.get<string>('DB_PASSWORD', 'postgres'),
+        database: activeDbName,
+        entities: [Scheme, SchemeConfig, Customer, Material, Billing, Payment],
+        synchronize: false,
+      };
     }
-    activeDbName = activeDbName || `tenant_${tenantId}`;
-
-    await this.ensureDatabaseExists(activeDbName);
-
-    const host = this.configService.get<string>('DB_HOST', 'localhost');
-    const port = this.configService.get<number>('DB_PORT', 5432);
-    const user = this.configService.get<string>('DB_USERNAME', 'postgres');
-
-    logger.info(`Connecting to ${host}:${port}/${activeDbName}`, { context: CTX, tenantId });
-
-    const options: DataSourceOptions = {
-      type: 'postgres',
-      host,
-      port,
-      username: user,
-      password: this.configService.get<string>('DB_PASSWORD', 'postgres'),
-      database: activeDbName,
-      entities: [Scheme, SchemeConfig, Customer, Material, Billing, Payment],
-      synchronize: false,
-    };
 
     const dataSource = new DataSource(options);
     await dataSource.initialize();

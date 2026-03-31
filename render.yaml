@@ -1,0 +1,32 @@
+services:
+  - type: web
+    name: scheme-tool-backend
+    runtime: node
+    region: singapore
+    plan: free
+    rootDir: .
+    buildCommand: npm install && npm run build
+    startCommand: npm run start:prod
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 3000
+      - key: DB_HOST
+        sync: false
+      - key: DB_PORT
+        value: 5432
+      - key: DB_USERNAME
+        sync: false
+      - key: DB_PASSWORD
+        sync: false
+      - key: DB_DATABASE
+        sync: false
+      - key: DB_ENCRYPTION_KEY
+        sync: false
+      - key: JWT_SECRET
+        sync: false
+      - key: JWT_EXPIRES_IN
+        value: 8h
+      - key: FRONTEND_URL
+        sync: false
