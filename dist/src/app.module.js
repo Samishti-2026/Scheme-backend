@@ -51,6 +51,7 @@ exports.AppModule = AppModule = __decorate([
                     username: configService.get('DB_USERNAME', 'postgres'),
                     password: configService.get('DB_PASSWORD', 'postgres'),
                     database: configService.get('DB_DATABASE'),
+                    ssl: configService.get('DB_HOST') !== 'localhost' ? { rejectUnauthorized: false } : false,
                     entities: [tenant_entity_1.Tenant, customer_entity_1.Customer, material_entity_1.Material, billing_entity_1.Billing, payment_entity_1.Payment],
                     synchronize: false,
                 }),

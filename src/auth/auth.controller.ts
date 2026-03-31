@@ -123,7 +123,7 @@ export class AuthController {
     res.cookie(COOKIE_NAME, token, {
       httpOnly: true,
       secure:   IS_PROD,
-      sameSite: IS_PROD ? 'strict' : 'lax',
+      sameSite: IS_PROD ? 'none' : 'lax',  // 'none' required for cross-domain cookies
       maxAge:   8 * 60 * 60 * 1000,
     });
 
@@ -143,7 +143,7 @@ export class AuthController {
   @Post('logout')
   @HttpCode(200)
   logout(@Res({ passthrough: true }) res: Response) {
-    res.clearCookie(COOKIE_NAME, { httpOnly: true, secure: IS_PROD, sameSite: IS_PROD ? 'strict' : 'lax' });
+    res.clearCookie(COOKIE_NAME, { httpOnly: true, secure: IS_PROD, sameSite: IS_PROD ? 'none' : 'lax' });
     logger.info(`Logout — cookie cleared`, { context: CTX });
     return { message: 'Logged out' };
   }

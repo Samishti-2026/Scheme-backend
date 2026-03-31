@@ -82,7 +82,7 @@ export class TenantsConnectionService implements OnModuleDestroy {
     await dataSource.initialize();
     this.connections.set(tenantId, dataSource);
 
-    logger.info(`DataSource initialized for tenant "${tenantId}" → DB "${activeDbName}"`, {
+    logger.info(`DataSource initialized for tenant "${tenantId}"`, {
       context: CTX,
       cachedTenants: [...this.connections.keys()],
     });

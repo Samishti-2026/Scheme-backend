@@ -26,6 +26,7 @@ async function bootstrap() {
       'http://localhost:4173',
       process.env.FRONTEND_URL,
     ].filter(Boolean) as string[],
+    // Note: update FRONTEND_URL env var on Render after Vercel deployment
     methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
     allowedHeaders: ['Content-Type', 'x-tenant-id'],
     credentials: true, // required for cookies to be sent cross-origin

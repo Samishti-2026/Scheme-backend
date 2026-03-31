@@ -4045,3 +4045,557 @@
 {"context":"DatabaseModule","level":"info","message":"TENANT_CONNECTION ready for \"Acme Corporation\"","timestamp":"2026-03-24T11:07:18.374Z"}
 {"context":"RolesGuard","level":"debug","message":"Checking roles for \"POST /api/recipients/query\"","requiredRoles":["Admin","Executive","Manager"],"timestamp":"2026-03-24T11:07:18.375Z","user":{"id":1,"role":"Admin","tenantId":1,"username":"admin"}}
 {"context":"RolesGuard","level":"debug","message":"ALLOWED — role \"Admin\" passed for POST /api/recipients/query","timestamp":"2026-03-24T11:07:18.376Z"}
+{"context":"NestFactory","level":"info","message":"Starting Nest application...","timestamp":"2026-03-31T09:47:18.796Z"}
+{"context":"InstanceLoader","level":"info","message":"AppModule dependencies initialized","timestamp":"2026-03-31T09:47:18.814Z"}
+{"context":"InstanceLoader","level":"info","message":"TypeOrmModule dependencies initialized","timestamp":"2026-03-31T09:47:18.815Z"}
+{"context":"InstanceLoader","level":"info","message":"ConfigHostModule dependencies initialized","timestamp":"2026-03-31T09:47:18.815Z"}
+{"context":"InstanceLoader","level":"info","message":"AnalyticsModule dependencies initialized","timestamp":"2026-03-31T09:47:18.816Z"}
+{"context":"InstanceLoader","level":"info","message":"DashboardModule dependencies initialized","timestamp":"2026-03-31T09:47:18.818Z"}
+{"context":"InstanceLoader","level":"info","message":"ConfigModule dependencies initialized","timestamp":"2026-03-31T09:47:18.820Z"}
+{"context":"InstanceLoader","level":"info","message":"ConfigModule dependencies initialized","timestamp":"2026-03-31T09:47:18.820Z"}
+{"context":"InstanceLoader","level":"info","message":"JwtModule dependencies initialized","timestamp":"2026-03-31T09:47:18.829Z"}
+{"context":"InstanceLoader","level":"info","message":"TypeOrmCoreModule dependencies initialized","timestamp":"2026-03-31T09:47:22.208Z"}
+{"context":"InstanceLoader","level":"info","message":"TypeOrmModule dependencies initialized","timestamp":"2026-03-31T09:47:22.209Z"}
+{"context":"InstanceLoader","level":"info","message":"TypeOrmModule dependencies initialized","timestamp":"2026-03-31T09:47:22.209Z"}
+{"context":"InstanceLoader","level":"info","message":"TypeOrmModule dependencies initialized","timestamp":"2026-03-31T09:47:22.210Z"}
+{"context":"InstanceLoader","level":"info","message":"TypeOrmModule dependencies initialized","timestamp":"2026-03-31T09:47:22.210Z"}
+{"context":"InstanceLoader","level":"info","message":"TypeOrmModule dependencies initialized","timestamp":"2026-03-31T09:47:22.210Z"}
+{"context":"InstanceLoader","level":"info","message":"TypeOrmModule dependencies initialized","timestamp":"2026-03-31T09:47:22.211Z"}
+{"context":"InstanceLoader","level":"info","message":"AuthModule dependencies initialized","timestamp":"2026-03-31T09:47:22.211Z"}
+{"context":"InstanceLoader","level":"info","message":"DatabaseModule dependencies initialized","timestamp":"2026-03-31T09:47:22.212Z"}
+{"context":"InstanceLoader","level":"info","message":"DatasetsModule dependencies initialized","timestamp":"2026-03-31T09:47:22.213Z"}
+{"context":"InstanceLoader","level":"info","message":"SettingsModule dependencies initialized","timestamp":"2026-03-31T09:47:22.213Z"}
+{"context":"InstanceLoader","level":"info","message":"RecipientsModule dependencies initialized","timestamp":"2026-03-31T09:47:22.213Z"}
+{"context":"InstanceLoader","level":"info","message":"SchemeConfigsModule dependencies initialized","timestamp":"2026-03-31T09:47:22.214Z"}
+{"context":"InstanceLoader","level":"info","message":"CustomersModule dependencies initialized","timestamp":"2026-03-31T09:47:22.214Z"}
+{"context":"InstanceLoader","level":"info","message":"MaterialsModule dependencies initialized","timestamp":"2026-03-31T09:47:22.215Z"}
+{"context":"InstanceLoader","level":"info","message":"BillingsModule dependencies initialized","timestamp":"2026-03-31T09:47:22.215Z"}
+{"context":"InstanceLoader","level":"info","message":"PaymentsModule dependencies initialized","timestamp":"2026-03-31T09:47:22.215Z"}
+{"context":"InstanceLoader","level":"info","message":"TenantsModule dependencies initialized","timestamp":"2026-03-31T09:47:22.215Z"}
+{"context":"InstanceLoader","level":"info","message":"SchemesModule dependencies initialized","timestamp":"2026-03-31T09:47:22.216Z"}
+{"context":"InstanceLoader","level":"info","message":"QueryModule dependencies initialized","timestamp":"2026-03-31T09:47:22.216Z"}
+{"context":"LegacyRouteConverter","level":"warn","message":"Unsupported route path: \"/api/*\". In previous versions, the symbols ?, *, and + were used to denote optional or repeating path parameters. The latest version of \"path-to-regexp\" now requires the use of named parameters. For example, instead of using a route like /users/* to capture all routes starting with \"/users\", you should use /users/*path. For more details, refer to the migration guide. Attempting to auto-convert...","timestamp":"2026-03-31T09:47:22.708Z"}
+{"context":"RoutesResolver","level":"info","message":"TenantsController {/api/tenants}:","timestamp":"2026-03-31T09:47:22.708Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/tenants, GET} route","timestamp":"2026-03-31T09:47:22.710Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/tenants, POST} route","timestamp":"2026-03-31T09:47:22.710Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/tenants/:id, GET} route","timestamp":"2026-03-31T09:47:22.711Z"}
+{"context":"RoutesResolver","level":"info","message":"SchemeConfigsController {/api/scheme-config}:","timestamp":"2026-03-31T09:47:22.711Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/scheme-config, GET} route","timestamp":"2026-03-31T09:47:22.711Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/scheme-config/all, GET} route","timestamp":"2026-03-31T09:47:22.712Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/scheme-config, POST} route","timestamp":"2026-03-31T09:47:22.712Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/scheme-config/:id, PUT} route","timestamp":"2026-03-31T09:47:22.713Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/scheme-config/:id, DELETE} route","timestamp":"2026-03-31T09:47:22.713Z"}
+{"context":"RoutesResolver","level":"info","message":"SchemesController {/api/schemes}:","timestamp":"2026-03-31T09:47:22.713Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/schemes, GET} route","timestamp":"2026-03-31T09:47:22.714Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/schemes/:id, GET} route","timestamp":"2026-03-31T09:47:22.714Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/schemes, POST} route","timestamp":"2026-03-31T09:47:22.714Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/schemes/:id, PUT} route","timestamp":"2026-03-31T09:47:22.715Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/schemes/:id, DELETE} route","timestamp":"2026-03-31T09:47:22.715Z"}
+{"context":"RoutesResolver","level":"info","message":"CustomersController {/api/customers}:","timestamp":"2026-03-31T09:47:22.715Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/customers, GET} route","timestamp":"2026-03-31T09:47:22.716Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/customers/:id, GET} route","timestamp":"2026-03-31T09:47:22.717Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/customers, POST} route","timestamp":"2026-03-31T09:47:22.717Z"}
+{"context":"RoutesResolver","level":"info","message":"MaterialsController {/api/materials}:","timestamp":"2026-03-31T09:47:22.717Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/materials, GET} route","timestamp":"2026-03-31T09:47:22.718Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/materials/:id, GET} route","timestamp":"2026-03-31T09:47:22.718Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/materials, POST} route","timestamp":"2026-03-31T09:47:22.719Z"}
+{"context":"RoutesResolver","level":"info","message":"BillingsController {/api/billings}:","timestamp":"2026-03-31T09:47:22.719Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/billings, GET} route","timestamp":"2026-03-31T09:47:22.719Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/billings/:id, GET} route","timestamp":"2026-03-31T09:47:22.720Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/billings, POST} route","timestamp":"2026-03-31T09:47:22.720Z"}
+{"context":"RoutesResolver","level":"info","message":"PaymentsController {/api/payments}:","timestamp":"2026-03-31T09:47:22.720Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/payments, GET} route","timestamp":"2026-03-31T09:47:22.720Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/payments/find, GET} route","timestamp":"2026-03-31T09:47:22.721Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/payments, POST} route","timestamp":"2026-03-31T09:47:22.721Z"}
+{"context":"RoutesResolver","level":"info","message":"DatasetsController {/api}:","timestamp":"2026-03-31T09:47:22.721Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/datasets, GET} route","timestamp":"2026-03-31T09:47:22.722Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/filter-values, GET} route","timestamp":"2026-03-31T09:47:22.722Z"}
+{"context":"RoutesResolver","level":"info","message":"RecipientsController {/api/recipients}:","timestamp":"2026-03-31T09:47:22.722Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/recipients, GET} route","timestamp":"2026-03-31T09:47:22.723Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/recipients/query, POST} route","timestamp":"2026-03-31T09:47:22.723Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/recipients/filter-options, GET} route","timestamp":"2026-03-31T09:47:22.723Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/recipients/types, GET} route","timestamp":"2026-03-31T09:47:22.724Z"}
+{"context":"RoutesResolver","level":"info","message":"AnalyticsController {/api/analytics}:","timestamp":"2026-03-31T09:47:22.724Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/analytics/kpis, GET} route","timestamp":"2026-03-31T09:47:22.727Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/analytics/chart, GET} route","timestamp":"2026-03-31T09:47:22.727Z"}
+{"context":"RoutesResolver","level":"info","message":"DashboardController {/api/dashboard}:","timestamp":"2026-03-31T09:47:22.727Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/dashboard/summary, GET} route","timestamp":"2026-03-31T09:47:22.728Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/dashboard/upcoming-schemes, GET} route","timestamp":"2026-03-31T09:47:22.728Z"}
+{"context":"RoutesResolver","level":"info","message":"SettingsController {/api/settings}:","timestamp":"2026-03-31T09:47:22.728Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/settings, GET} route","timestamp":"2026-03-31T09:47:22.729Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/settings, PUT} route","timestamp":"2026-03-31T09:47:22.729Z"}
+{"context":"RoutesResolver","level":"info","message":"AuthController {/api/auth}:","timestamp":"2026-03-31T09:47:22.729Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/auth/resolve-tenant, POST} route","timestamp":"2026-03-31T09:47:22.730Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/auth/login, POST} route","timestamp":"2026-03-31T09:47:22.730Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/auth/logout, POST} route","timestamp":"2026-03-31T09:47:22.730Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/auth/me, POST} route","timestamp":"2026-03-31T09:47:22.731Z"}
+{"context":"RoutesResolver","level":"info","message":"QueryController {/api/query}:","timestamp":"2026-03-31T09:47:22.731Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/query/execute, POST} route","timestamp":"2026-03-31T09:47:22.731Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/query/field-values, GET} route","timestamp":"2026-03-31T09:47:22.732Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/query/operators, GET} route","timestamp":"2026-03-31T09:47:22.732Z"}
+{"context":"NestApplication","level":"info","message":"Nest application successfully started","timestamp":"2026-03-31T09:47:22.736Z"}
+{"context":"UserMiddleware","level":"debug","message":"Anonymous request — no auth cookie","timestamp":"2026-03-31T09:47:36.676Z"}
+{"context":"UserMiddleware","level":"debug","message":"Anonymous request — no auth cookie","timestamp":"2026-03-31T09:47:36.697Z"}
+{"context":"UserMiddleware","level":"debug","message":"Anonymous request — no auth cookie","timestamp":"2026-03-31T09:47:39.744Z"}
+{"code":"42P01","context":"ExceptionsHandler","driverError":{"code":"42P01","file":"parse_relation.c","length":107,"line":"1466","name":"error","position":"286","routine":"parserOpenTable","severity":"ERROR"},"error":{"code":"42P01","driverError":{"code":"42P01","file":"parse_relation.c","length":107,"line":"1466","name":"error","position":"286","routine":"parserOpenTable","severity":"ERROR"},"file":"parse_relation.c","length":107,"line":"1466","parameters":["acme"],"position":"286","query":"SELECT \"Tenant\".\"tenant_id\" AS \"Tenant_tenant_id\", \"Tenant\".\"tenant_name\" AS \"Tenant_tenant_name\", \"Tenant\".\"slug\" AS \"Tenant_slug\", \"Tenant\".\"connection_uri\" AS \"Tenant_connection_uri\", \"Tenant\".\"start_date\" AS \"Tenant_start_date\", \"Tenant\".\"expiry_date\" AS \"Tenant_expiry_date\" FROM \"tenants\" \"Tenant\" WHERE ((\"Tenant\".\"slug\" = $1)) LIMIT 1","routine":"parserOpenTable","severity":"ERROR"},"file":"parse_relation.c","length":107,"level":"error","line":"1466","message":"relation \"tenants\" does not exist","parameters":["acme"],"position":"286","query":"SELECT \"Tenant\".\"tenant_id\" AS \"Tenant_tenant_id\", \"Tenant\".\"tenant_name\" AS \"Tenant_tenant_name\", \"Tenant\".\"slug\" AS \"Tenant_slug\", \"Tenant\".\"connection_uri\" AS \"Tenant_connection_uri\", \"Tenant\".\"start_date\" AS \"Tenant_start_date\", \"Tenant\".\"expiry_date\" AS \"Tenant_expiry_date\" FROM \"tenants\" \"Tenant\" WHERE ((\"Tenant\".\"slug\" = $1)) LIMIT 1","routine":"parserOpenTable","severity":"ERROR","stack":["QueryFailedError: relation \"tenants\" does not exist\n    at PostgresQueryRunner.query (C:\\Samishti\\Schemes-01-main\\backend\\node_modules\\typeorm\\driver\\src\\driver\\postgres\\PostgresQueryRunner.ts:325:19)\n    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)\n    at async SelectQueryBuilder.loadRawResults (C:\\Samishti\\Schemes-01-main\\backend\\node_modules\\typeorm\\query-builder\\src\\query-builder\\SelectQueryBuilder.ts:3868:25)\n    at async SelectQueryBuilder.executeEntitiesAndRawResults (C:\\Samishti\\Schemes-01-main\\backend\\node_modules\\typeorm\\query-builder\\src\\query-builder\\SelectQueryBuilder.ts:3614:26)\n    at async SelectQueryBuilder.getRawAndEntities (C:\\Samishti\\Schemes-01-main\\backend\\node_modules\\typeorm\\query-builder\\src\\query-builder\\SelectQueryBuilder.ts:1671:29)\n    at async SelectQueryBuilder.getOne (C:\\Samishti\\Schemes-01-main\\backend\\node_modules\\typeorm\\query-builder\\src\\query-builder\\SelectQueryBuilder.ts:1698:25)\n    at async AuthController.resolveTenant (C:\\Samishti\\Schemes-01-main\\backend\\src\\auth\\auth.controller.ts:35:20)\n    at async C:\\Samishti\\Schemes-01-main\\backend\\node_modules\\@nestjs\\core\\router\\router-execution-context.js:46:28\n    at async C:\\Samishti\\Schemes-01-main\\backend\\node_modules\\@nestjs\\core\\router\\router-proxy.js:9:17\n    at async C:\\Samishti\\Schemes-01-main\\backend\\node_modules\\@nestjs\\core\\router\\router-explorer.js:199:17"],"timestamp":"2026-03-31T09:47:41.787Z"}
+{"context":"NestFactory","level":"info","message":"Starting Nest application...","timestamp":"2026-03-31T09:50:51.291Z"}
+{"context":"InstanceLoader","level":"info","message":"AppModule dependencies initialized","timestamp":"2026-03-31T09:50:51.307Z"}
+{"context":"InstanceLoader","level":"info","message":"TypeOrmModule dependencies initialized","timestamp":"2026-03-31T09:50:51.308Z"}
+{"context":"InstanceLoader","level":"info","message":"ConfigHostModule dependencies initialized","timestamp":"2026-03-31T09:50:51.308Z"}
+{"context":"InstanceLoader","level":"info","message":"AnalyticsModule dependencies initialized","timestamp":"2026-03-31T09:50:51.309Z"}
+{"context":"InstanceLoader","level":"info","message":"DashboardModule dependencies initialized","timestamp":"2026-03-31T09:50:51.309Z"}
+{"context":"InstanceLoader","level":"info","message":"ConfigModule dependencies initialized","timestamp":"2026-03-31T09:50:51.310Z"}
+{"context":"InstanceLoader","level":"info","message":"ConfigModule dependencies initialized","timestamp":"2026-03-31T09:50:51.310Z"}
+{"context":"InstanceLoader","level":"info","message":"JwtModule dependencies initialized","timestamp":"2026-03-31T09:50:51.321Z"}
+{"context":"InstanceLoader","level":"info","message":"TypeOrmCoreModule dependencies initialized","timestamp":"2026-03-31T09:50:53.464Z"}
+{"context":"InstanceLoader","level":"info","message":"TypeOrmModule dependencies initialized","timestamp":"2026-03-31T09:50:53.465Z"}
+{"context":"InstanceLoader","level":"info","message":"TypeOrmModule dependencies initialized","timestamp":"2026-03-31T09:50:53.466Z"}
+{"context":"InstanceLoader","level":"info","message":"TypeOrmModule dependencies initialized","timestamp":"2026-03-31T09:50:53.467Z"}
+{"context":"InstanceLoader","level":"info","message":"TypeOrmModule dependencies initialized","timestamp":"2026-03-31T09:50:53.468Z"}
+{"context":"InstanceLoader","level":"info","message":"TypeOrmModule dependencies initialized","timestamp":"2026-03-31T09:50:53.469Z"}
+{"context":"InstanceLoader","level":"info","message":"TypeOrmModule dependencies initialized","timestamp":"2026-03-31T09:50:53.469Z"}
+{"context":"InstanceLoader","level":"info","message":"AuthModule dependencies initialized","timestamp":"2026-03-31T09:50:53.472Z"}
+{"context":"InstanceLoader","level":"info","message":"DatabaseModule dependencies initialized","timestamp":"2026-03-31T09:50:53.473Z"}
+{"context":"InstanceLoader","level":"info","message":"DatasetsModule dependencies initialized","timestamp":"2026-03-31T09:50:53.475Z"}
+{"context":"InstanceLoader","level":"info","message":"SettingsModule dependencies initialized","timestamp":"2026-03-31T09:50:53.476Z"}
+{"context":"InstanceLoader","level":"info","message":"RecipientsModule dependencies initialized","timestamp":"2026-03-31T09:50:53.477Z"}
+{"context":"InstanceLoader","level":"info","message":"SchemeConfigsModule dependencies initialized","timestamp":"2026-03-31T09:50:53.479Z"}
+{"context":"InstanceLoader","level":"info","message":"CustomersModule dependencies initialized","timestamp":"2026-03-31T09:50:53.479Z"}
+{"context":"InstanceLoader","level":"info","message":"MaterialsModule dependencies initialized","timestamp":"2026-03-31T09:50:53.480Z"}
+{"context":"InstanceLoader","level":"info","message":"BillingsModule dependencies initialized","timestamp":"2026-03-31T09:50:53.481Z"}
+{"context":"InstanceLoader","level":"info","message":"PaymentsModule dependencies initialized","timestamp":"2026-03-31T09:50:53.481Z"}
+{"context":"InstanceLoader","level":"info","message":"TenantsModule dependencies initialized","timestamp":"2026-03-31T09:50:53.482Z"}
+{"context":"InstanceLoader","level":"info","message":"SchemesModule dependencies initialized","timestamp":"2026-03-31T09:50:53.483Z"}
+{"context":"InstanceLoader","level":"info","message":"QueryModule dependencies initialized","timestamp":"2026-03-31T09:50:53.484Z"}
+{"context":"LegacyRouteConverter","level":"warn","message":"Unsupported route path: \"/api/*\". In previous versions, the symbols ?, *, and + were used to denote optional or repeating path parameters. The latest version of \"path-to-regexp\" now requires the use of named parameters. For example, instead of using a route like /users/* to capture all routes starting with \"/users\", you should use /users/*path. For more details, refer to the migration guide. Attempting to auto-convert...","timestamp":"2026-03-31T09:50:54.843Z"}
+{"context":"RoutesResolver","level":"info","message":"TenantsController {/api/tenants}:","timestamp":"2026-03-31T09:50:54.845Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/tenants, GET} route","timestamp":"2026-03-31T09:50:54.850Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/tenants, POST} route","timestamp":"2026-03-31T09:50:54.851Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/tenants/:id, GET} route","timestamp":"2026-03-31T09:50:54.854Z"}
+{"context":"RoutesResolver","level":"info","message":"SchemeConfigsController {/api/scheme-config}:","timestamp":"2026-03-31T09:50:54.855Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/scheme-config, GET} route","timestamp":"2026-03-31T09:50:54.856Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/scheme-config/all, GET} route","timestamp":"2026-03-31T09:50:54.858Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/scheme-config, POST} route","timestamp":"2026-03-31T09:50:54.859Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/scheme-config/:id, PUT} route","timestamp":"2026-03-31T09:50:54.860Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/scheme-config/:id, DELETE} route","timestamp":"2026-03-31T09:50:54.861Z"}
+{"context":"RoutesResolver","level":"info","message":"SchemesController {/api/schemes}:","timestamp":"2026-03-31T09:50:54.862Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/schemes, GET} route","timestamp":"2026-03-31T09:50:54.876Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/schemes/:id, GET} route","timestamp":"2026-03-31T09:50:54.877Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/schemes, POST} route","timestamp":"2026-03-31T09:50:54.878Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/schemes/:id, PUT} route","timestamp":"2026-03-31T09:50:54.878Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/schemes/:id, DELETE} route","timestamp":"2026-03-31T09:50:54.883Z"}
+{"context":"RoutesResolver","level":"info","message":"CustomersController {/api/customers}:","timestamp":"2026-03-31T09:50:54.884Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/customers, GET} route","timestamp":"2026-03-31T09:50:54.885Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/customers/:id, GET} route","timestamp":"2026-03-31T09:50:54.886Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/customers, POST} route","timestamp":"2026-03-31T09:50:54.887Z"}
+{"context":"RoutesResolver","level":"info","message":"MaterialsController {/api/materials}:","timestamp":"2026-03-31T09:50:54.888Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/materials, GET} route","timestamp":"2026-03-31T09:50:54.889Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/materials/:id, GET} route","timestamp":"2026-03-31T09:50:54.890Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/materials, POST} route","timestamp":"2026-03-31T09:50:54.891Z"}
+{"context":"RoutesResolver","level":"info","message":"BillingsController {/api/billings}:","timestamp":"2026-03-31T09:50:54.892Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/billings, GET} route","timestamp":"2026-03-31T09:50:54.893Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/billings/:id, GET} route","timestamp":"2026-03-31T09:50:54.893Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/billings, POST} route","timestamp":"2026-03-31T09:50:54.894Z"}
+{"context":"RoutesResolver","level":"info","message":"PaymentsController {/api/payments}:","timestamp":"2026-03-31T09:50:54.895Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/payments, GET} route","timestamp":"2026-03-31T09:50:54.897Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/payments/find, GET} route","timestamp":"2026-03-31T09:50:54.898Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/payments, POST} route","timestamp":"2026-03-31T09:50:54.899Z"}
+{"context":"RoutesResolver","level":"info","message":"DatasetsController {/api}:","timestamp":"2026-03-31T09:50:54.900Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/datasets, GET} route","timestamp":"2026-03-31T09:50:54.901Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/filter-values, GET} route","timestamp":"2026-03-31T09:50:54.903Z"}
+{"context":"RoutesResolver","level":"info","message":"RecipientsController {/api/recipients}:","timestamp":"2026-03-31T09:50:54.903Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/recipients, GET} route","timestamp":"2026-03-31T09:50:54.904Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/recipients/query, POST} route","timestamp":"2026-03-31T09:50:54.905Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/recipients/filter-options, GET} route","timestamp":"2026-03-31T09:50:54.906Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/recipients/types, GET} route","timestamp":"2026-03-31T09:50:54.907Z"}
+{"context":"RoutesResolver","level":"info","message":"AnalyticsController {/api/analytics}:","timestamp":"2026-03-31T09:50:54.908Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/analytics/kpis, GET} route","timestamp":"2026-03-31T09:50:54.911Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/analytics/chart, GET} route","timestamp":"2026-03-31T09:50:54.915Z"}
+{"context":"RoutesResolver","level":"info","message":"DashboardController {/api/dashboard}:","timestamp":"2026-03-31T09:50:54.915Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/dashboard/summary, GET} route","timestamp":"2026-03-31T09:50:54.917Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/dashboard/upcoming-schemes, GET} route","timestamp":"2026-03-31T09:50:54.917Z"}
+{"context":"RoutesResolver","level":"info","message":"SettingsController {/api/settings}:","timestamp":"2026-03-31T09:50:54.918Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/settings, GET} route","timestamp":"2026-03-31T09:50:54.919Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/settings, PUT} route","timestamp":"2026-03-31T09:50:54.920Z"}
+{"context":"RoutesResolver","level":"info","message":"AuthController {/api/auth}:","timestamp":"2026-03-31T09:50:54.921Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/auth/resolve-tenant, POST} route","timestamp":"2026-03-31T09:50:54.922Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/auth/login, POST} route","timestamp":"2026-03-31T09:50:54.922Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/auth/logout, POST} route","timestamp":"2026-03-31T09:50:54.923Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/auth/me, POST} route","timestamp":"2026-03-31T09:50:54.924Z"}
+{"context":"RoutesResolver","level":"info","message":"QueryController {/api/query}:","timestamp":"2026-03-31T09:50:54.925Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/query/execute, POST} route","timestamp":"2026-03-31T09:50:54.925Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/query/field-values, GET} route","timestamp":"2026-03-31T09:50:54.926Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/query/operators, GET} route","timestamp":"2026-03-31T09:50:54.927Z"}
+{"context":"NestApplication","level":"info","message":"Nest application successfully started","timestamp":"2026-03-31T09:50:54.937Z"}
+{"context":"UserMiddleware","level":"debug","message":"Anonymous request — no auth cookie","timestamp":"2026-03-31T09:50:55.218Z"}
+{"context":"UserMiddleware","level":"debug","message":"Anonymous request — no auth cookie","timestamp":"2026-03-31T09:51:06.088Z"}
+{"context":"UserMiddleware","level":"debug","message":"Anonymous request — no auth cookie","timestamp":"2026-03-31T10:06:12.136Z"}
+{"context":"UserMiddleware","level":"debug","message":"Anonymous request — no auth cookie","timestamp":"2026-03-31T10:06:12.142Z"}
+{"context":"UserMiddleware","level":"debug","message":"Anonymous request — no auth cookie","timestamp":"2026-03-31T10:06:21.719Z"}
+{"context":"AuthController","level":"info","message":"Tenant resolved by slug","slug":"acme","tenantId":1,"timestamp":"2026-03-31T10:06:23.612Z"}
+{"context":"UserMiddleware","level":"debug","message":"Anonymous request — no auth cookie","timestamp":"2026-03-31T10:06:40.663Z"}
+{"context":"AuthController","level":"info","message":"POST /auth/login attempt","timestamp":"2026-03-31T10:06:40.668Z","username":"admin"}
+{"context":"TenantConnection","level":"debug","message":"getTenantConnection called","tenantId":"1","timestamp":"2026-03-31T10:06:42.503Z"}
+{"context":"TenantConnection","level":"debug","message":"No cached connection — creating new one","tenantId":"1","timestamp":"2026-03-31T10:06:42.504Z"}
+{"context":"TenantConnection","level":"debug","message":"connection_uri encrypted: true","timestamp":"2026-03-31T10:06:42.505Z"}
+{"context":"TenantConnection","level":"info","message":"Connecting via full URI to dpg-d75mv4juibrs73bqltrg-a.singapore-postgres.render.com/scheme_tool_db","tenantId":"1","timestamp":"2026-03-31T10:06:42.508Z"}
+{"cachedTenants":["1"],"context":"TenantConnection","level":"info","message":"DataSource initialized for tenant \"1\"","timestamp":"2026-03-31T10:06:43.435Z"}
+{"context":"AuthController","level":"info","message":"Login success — JWT issued","role":"admin","tenantId":1,"timestamp":"2026-03-31T10:06:43.874Z","username":"admin"}
+{"context":"UserMiddleware","level":"debug","message":"JWT verified — req.user attached","role":"admin","tenantId":1,"timestamp":"2026-03-31T10:06:44.035Z","userId":1}
+{"context":"RolesGuard","level":"debug","message":"Checking roles for \"GET /api/dashboard/upcoming-schemes\"","requiredRoles":["Admin","Executive","Manager","Participant"],"timestamp":"2026-03-31T10:06:44.038Z","user":{"id":1,"role":"admin","tenantId":1,"username":"admin"}}
+{"context":"RolesGuard","level":"warn","message":"DENIED — role \"admin\" not in [Admin, Executive, Manager, Participant]","path":"GET /api/dashboard/upcoming-schemes","timestamp":"2026-03-31T10:06:44.039Z","userId":1}
+{"context":"UserMiddleware","level":"debug","message":"JWT verified — req.user attached","role":"admin","tenantId":1,"timestamp":"2026-03-31T10:06:44.043Z","userId":1}
+{"context":"RolesGuard","level":"debug","message":"Checking roles for \"GET /api/dashboard/summary\"","requiredRoles":["Admin","Executive","Manager","Participant"],"timestamp":"2026-03-31T10:06:44.044Z","user":{"id":1,"role":"admin","tenantId":1,"username":"admin"}}
+{"context":"RolesGuard","level":"warn","message":"DENIED — role \"admin\" not in [Admin, Executive, Manager, Participant]","path":"GET /api/dashboard/summary","timestamp":"2026-03-31T10:06:44.045Z","userId":1}
+{"context":"UserMiddleware","level":"debug","message":"JWT verified — req.user attached","role":"admin","tenantId":1,"timestamp":"2026-03-31T10:06:44.049Z","userId":1}
+{"context":"RolesGuard","level":"debug","message":"Checking roles for \"GET /api/dashboard/upcoming-schemes\"","requiredRoles":["Admin","Executive","Manager","Participant"],"timestamp":"2026-03-31T10:06:44.050Z","user":{"id":1,"role":"admin","tenantId":1,"username":"admin"}}
+{"context":"RolesGuard","level":"warn","message":"DENIED — role \"admin\" not in [Admin, Executive, Manager, Participant]","path":"GET /api/dashboard/upcoming-schemes","timestamp":"2026-03-31T10:06:44.051Z","userId":1}
+{"context":"UserMiddleware","level":"debug","message":"JWT verified — req.user attached","role":"admin","tenantId":1,"timestamp":"2026-03-31T10:06:44.055Z","userId":1}
+{"context":"RolesGuard","level":"debug","message":"Checking roles for \"GET /api/dashboard/summary\"","requiredRoles":["Admin","Executive","Manager","Participant"],"timestamp":"2026-03-31T10:06:44.055Z","user":{"id":1,"role":"admin","tenantId":1,"username":"admin"}}
+{"context":"RolesGuard","level":"warn","message":"DENIED — role \"admin\" not in [Admin, Executive, Manager, Participant]","path":"GET /api/dashboard/summary","timestamp":"2026-03-31T10:06:44.056Z","userId":1}
+{"context":"UserMiddleware","level":"debug","message":"JWT verified — req.user attached","role":"admin","tenantId":1,"timestamp":"2026-03-31T10:06:58.727Z","userId":1}
+{"context":"UserMiddleware","level":"debug","message":"JWT verified — req.user attached","role":"admin","tenantId":1,"timestamp":"2026-03-31T10:06:58.733Z","userId":1}
+{"context":"UserMiddleware","level":"debug","message":"JWT verified — req.user attached","role":"admin","tenantId":1,"timestamp":"2026-03-31T10:06:58.750Z","userId":1}
+{"context":"RolesGuard","level":"debug","message":"No @Roles() on handler — open access","timestamp":"2026-03-31T10:06:58.753Z"}
+{"context":"UserMiddleware","level":"debug","message":"JWT verified — req.user attached","role":"admin","tenantId":1,"timestamp":"2026-03-31T10:07:00.720Z","userId":1}
+{"context":"RolesGuard","level":"debug","message":"Checking roles for \"GET /api/dashboard/upcoming-schemes\"","requiredRoles":["Admin","Executive","Manager","Participant"],"timestamp":"2026-03-31T10:07:00.721Z","user":{"id":1,"role":"admin","tenantId":1,"username":"admin"}}
+{"context":"RolesGuard","level":"warn","message":"DENIED — role \"admin\" not in [Admin, Executive, Manager, Participant]","path":"GET /api/dashboard/upcoming-schemes","timestamp":"2026-03-31T10:07:00.722Z","userId":1}
+{"context":"UserMiddleware","level":"debug","message":"JWT verified — req.user attached","role":"admin","tenantId":1,"timestamp":"2026-03-31T10:07:00.727Z","userId":1}
+{"context":"RolesGuard","level":"debug","message":"Checking roles for \"GET /api/dashboard/summary\"","requiredRoles":["Admin","Executive","Manager","Participant"],"timestamp":"2026-03-31T10:07:00.727Z","user":{"id":1,"role":"admin","tenantId":1,"username":"admin"}}
+{"context":"RolesGuard","level":"warn","message":"DENIED — role \"admin\" not in [Admin, Executive, Manager, Participant]","path":"GET /api/dashboard/summary","timestamp":"2026-03-31T10:07:00.728Z","userId":1}
+{"context":"UserMiddleware","level":"debug","message":"JWT verified — req.user attached","role":"admin","tenantId":1,"timestamp":"2026-03-31T10:07:00.736Z","userId":1}
+{"context":"RolesGuard","level":"debug","message":"Checking roles for \"GET /api/dashboard/summary\"","requiredRoles":["Admin","Executive","Manager","Participant"],"timestamp":"2026-03-31T10:07:00.736Z","user":{"id":1,"role":"admin","tenantId":1,"username":"admin"}}
+{"context":"RolesGuard","level":"warn","message":"DENIED — role \"admin\" not in [Admin, Executive, Manager, Participant]","path":"GET /api/dashboard/summary","timestamp":"2026-03-31T10:07:00.737Z","userId":1}
+{"context":"UserMiddleware","level":"debug","message":"JWT verified — req.user attached","role":"admin","tenantId":1,"timestamp":"2026-03-31T10:07:00.744Z","userId":1}
+{"context":"RolesGuard","level":"debug","message":"Checking roles for \"GET /api/dashboard/upcoming-schemes\"","requiredRoles":["Admin","Executive","Manager","Participant"],"timestamp":"2026-03-31T10:07:00.745Z","user":{"id":1,"role":"admin","tenantId":1,"username":"admin"}}
+{"context":"RolesGuard","level":"warn","message":"DENIED — role \"admin\" not in [Admin, Executive, Manager, Participant]","path":"GET /api/dashboard/upcoming-schemes","timestamp":"2026-03-31T10:07:00.746Z","userId":1}
+{"context":"NestFactory","level":"info","message":"Starting Nest application...","timestamp":"2026-03-31T11:08:37.996Z"}
+{"context":"InstanceLoader","level":"info","message":"AppModule dependencies initialized","timestamp":"2026-03-31T11:08:38.016Z"}
+{"context":"InstanceLoader","level":"info","message":"TypeOrmModule dependencies initialized","timestamp":"2026-03-31T11:08:38.019Z"}
+{"context":"InstanceLoader","level":"info","message":"ConfigHostModule dependencies initialized","timestamp":"2026-03-31T11:08:38.020Z"}
+{"context":"InstanceLoader","level":"info","message":"AnalyticsModule dependencies initialized","timestamp":"2026-03-31T11:08:38.021Z"}
+{"context":"InstanceLoader","level":"info","message":"DashboardModule dependencies initialized","timestamp":"2026-03-31T11:08:38.022Z"}
+{"context":"InstanceLoader","level":"info","message":"ConfigModule dependencies initialized","timestamp":"2026-03-31T11:08:38.023Z"}
+{"context":"InstanceLoader","level":"info","message":"ConfigModule dependencies initialized","timestamp":"2026-03-31T11:08:38.024Z"}
+{"context":"InstanceLoader","level":"info","message":"JwtModule dependencies initialized","timestamp":"2026-03-31T11:08:38.041Z"}
+{"context":"InstanceLoader","level":"info","message":"TypeOrmCoreModule dependencies initialized","timestamp":"2026-03-31T11:08:40.297Z"}
+{"context":"InstanceLoader","level":"info","message":"TypeOrmModule dependencies initialized","timestamp":"2026-03-31T11:08:40.299Z"}
+{"context":"InstanceLoader","level":"info","message":"TypeOrmModule dependencies initialized","timestamp":"2026-03-31T11:08:40.303Z"}
+{"context":"InstanceLoader","level":"info","message":"TypeOrmModule dependencies initialized","timestamp":"2026-03-31T11:08:40.304Z"}
+{"context":"InstanceLoader","level":"info","message":"TypeOrmModule dependencies initialized","timestamp":"2026-03-31T11:08:40.304Z"}
+{"context":"InstanceLoader","level":"info","message":"TypeOrmModule dependencies initialized","timestamp":"2026-03-31T11:08:40.305Z"}
+{"context":"InstanceLoader","level":"info","message":"TypeOrmModule dependencies initialized","timestamp":"2026-03-31T11:08:40.305Z"}
+{"context":"InstanceLoader","level":"info","message":"AuthModule dependencies initialized","timestamp":"2026-03-31T11:08:40.307Z"}
+{"context":"InstanceLoader","level":"info","message":"DatabaseModule dependencies initialized","timestamp":"2026-03-31T11:08:40.309Z"}
+{"context":"InstanceLoader","level":"info","message":"DatasetsModule dependencies initialized","timestamp":"2026-03-31T11:08:40.311Z"}
+{"context":"InstanceLoader","level":"info","message":"SettingsModule dependencies initialized","timestamp":"2026-03-31T11:08:40.312Z"}
+{"context":"InstanceLoader","level":"info","message":"RecipientsModule dependencies initialized","timestamp":"2026-03-31T11:08:40.312Z"}
+{"context":"InstanceLoader","level":"info","message":"SchemeConfigsModule dependencies initialized","timestamp":"2026-03-31T11:08:40.314Z"}
+{"context":"InstanceLoader","level":"info","message":"CustomersModule dependencies initialized","timestamp":"2026-03-31T11:08:40.315Z"}
+{"context":"InstanceLoader","level":"info","message":"MaterialsModule dependencies initialized","timestamp":"2026-03-31T11:08:40.315Z"}
+{"context":"InstanceLoader","level":"info","message":"BillingsModule dependencies initialized","timestamp":"2026-03-31T11:08:40.316Z"}
+{"context":"InstanceLoader","level":"info","message":"PaymentsModule dependencies initialized","timestamp":"2026-03-31T11:08:40.316Z"}
+{"context":"InstanceLoader","level":"info","message":"TenantsModule dependencies initialized","timestamp":"2026-03-31T11:08:40.320Z"}
+{"context":"InstanceLoader","level":"info","message":"SchemesModule dependencies initialized","timestamp":"2026-03-31T11:08:40.321Z"}
+{"context":"InstanceLoader","level":"info","message":"QueryModule dependencies initialized","timestamp":"2026-03-31T11:08:40.321Z"}
+{"context":"LegacyRouteConverter","level":"warn","message":"Unsupported route path: \"/api/*\". In previous versions, the symbols ?, *, and + were used to denote optional or repeating path parameters. The latest version of \"path-to-regexp\" now requires the use of named parameters. For example, instead of using a route like /users/* to capture all routes starting with \"/users\", you should use /users/*path. For more details, refer to the migration guide. Attempting to auto-convert...","timestamp":"2026-03-31T11:08:41.733Z"}
+{"context":"RoutesResolver","level":"info","message":"TenantsController {/api/tenants}:","timestamp":"2026-03-31T11:08:41.737Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/tenants, GET} route","timestamp":"2026-03-31T11:08:41.742Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/tenants, POST} route","timestamp":"2026-03-31T11:08:41.744Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/tenants/:id, GET} route","timestamp":"2026-03-31T11:08:41.750Z"}
+{"context":"RoutesResolver","level":"info","message":"SchemeConfigsController {/api/scheme-config}:","timestamp":"2026-03-31T11:08:41.752Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/scheme-config, GET} route","timestamp":"2026-03-31T11:08:41.753Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/scheme-config/all, GET} route","timestamp":"2026-03-31T11:08:41.755Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/scheme-config, POST} route","timestamp":"2026-03-31T11:08:41.756Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/scheme-config/:id, PUT} route","timestamp":"2026-03-31T11:08:41.757Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/scheme-config/:id, DELETE} route","timestamp":"2026-03-31T11:08:41.759Z"}
+{"context":"RoutesResolver","level":"info","message":"SchemesController {/api/schemes}:","timestamp":"2026-03-31T11:08:41.760Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/schemes, GET} route","timestamp":"2026-03-31T11:08:41.763Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/schemes/:id, GET} route","timestamp":"2026-03-31T11:08:41.764Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/schemes, POST} route","timestamp":"2026-03-31T11:08:41.766Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/schemes/:id, PUT} route","timestamp":"2026-03-31T11:08:41.769Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/schemes/:id, DELETE} route","timestamp":"2026-03-31T11:08:41.770Z"}
+{"context":"RoutesResolver","level":"info","message":"CustomersController {/api/customers}:","timestamp":"2026-03-31T11:08:41.772Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/customers, GET} route","timestamp":"2026-03-31T11:08:41.773Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/customers/:id, GET} route","timestamp":"2026-03-31T11:08:41.775Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/customers, POST} route","timestamp":"2026-03-31T11:08:41.777Z"}
+{"context":"RoutesResolver","level":"info","message":"MaterialsController {/api/materials}:","timestamp":"2026-03-31T11:08:41.778Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/materials, GET} route","timestamp":"2026-03-31T11:08:41.779Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/materials/:id, GET} route","timestamp":"2026-03-31T11:08:41.780Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/materials, POST} route","timestamp":"2026-03-31T11:08:41.781Z"}
+{"context":"RoutesResolver","level":"info","message":"BillingsController {/api/billings}:","timestamp":"2026-03-31T11:08:41.782Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/billings, GET} route","timestamp":"2026-03-31T11:08:41.783Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/billings/:id, GET} route","timestamp":"2026-03-31T11:08:41.786Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/billings, POST} route","timestamp":"2026-03-31T11:08:41.787Z"}
+{"context":"RoutesResolver","level":"info","message":"PaymentsController {/api/payments}:","timestamp":"2026-03-31T11:08:41.788Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/payments, GET} route","timestamp":"2026-03-31T11:08:41.789Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/payments/find, GET} route","timestamp":"2026-03-31T11:08:41.790Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/payments, POST} route","timestamp":"2026-03-31T11:08:41.791Z"}
+{"context":"RoutesResolver","level":"info","message":"DatasetsController {/api}:","timestamp":"2026-03-31T11:08:41.792Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/datasets, GET} route","timestamp":"2026-03-31T11:08:41.794Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/filter-values, GET} route","timestamp":"2026-03-31T11:08:41.796Z"}
+{"context":"RoutesResolver","level":"info","message":"RecipientsController {/api/recipients}:","timestamp":"2026-03-31T11:08:41.798Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/recipients, GET} route","timestamp":"2026-03-31T11:08:41.800Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/recipients/query, POST} route","timestamp":"2026-03-31T11:08:41.802Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/recipients/filter-options, GET} route","timestamp":"2026-03-31T11:08:41.804Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/recipients/types, GET} route","timestamp":"2026-03-31T11:08:41.806Z"}
+{"context":"RoutesResolver","level":"info","message":"AnalyticsController {/api/analytics}:","timestamp":"2026-03-31T11:08:41.807Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/analytics/kpis, GET} route","timestamp":"2026-03-31T11:08:41.814Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/analytics/chart, GET} route","timestamp":"2026-03-31T11:08:41.816Z"}
+{"context":"RoutesResolver","level":"info","message":"DashboardController {/api/dashboard}:","timestamp":"2026-03-31T11:08:41.819Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/dashboard/summary, GET} route","timestamp":"2026-03-31T11:08:41.821Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/dashboard/upcoming-schemes, GET} route","timestamp":"2026-03-31T11:08:41.822Z"}
+{"context":"RoutesResolver","level":"info","message":"SettingsController {/api/settings}:","timestamp":"2026-03-31T11:08:41.824Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/settings, GET} route","timestamp":"2026-03-31T11:08:41.825Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/settings, PUT} route","timestamp":"2026-03-31T11:08:41.826Z"}
+{"context":"RoutesResolver","level":"info","message":"AuthController {/api/auth}:","timestamp":"2026-03-31T11:08:41.827Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/auth/resolve-tenant, POST} route","timestamp":"2026-03-31T11:08:41.828Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/auth/login, POST} route","timestamp":"2026-03-31T11:08:41.833Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/auth/logout, POST} route","timestamp":"2026-03-31T11:08:41.836Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/auth/me, POST} route","timestamp":"2026-03-31T11:08:41.837Z"}
+{"context":"RoutesResolver","level":"info","message":"QueryController {/api/query}:","timestamp":"2026-03-31T11:08:41.838Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/query/execute, POST} route","timestamp":"2026-03-31T11:08:41.840Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/query/field-values, GET} route","timestamp":"2026-03-31T11:08:41.841Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/query/operators, GET} route","timestamp":"2026-03-31T11:08:41.842Z"}
+{"context":"NestApplication","level":"info","message":"Nest application successfully started","timestamp":"2026-03-31T11:08:41.859Z"}
+{"context":"UserMiddleware","level":"debug","message":"Anonymous request — no auth cookie","timestamp":"2026-03-31T11:08:44.822Z"}
+{"context":"AuthController","level":"info","message":"Tenant resolved by slug","slug":"acme","tenantId":1,"timestamp":"2026-03-31T11:08:45.098Z"}
+{"context":"UserMiddleware","level":"debug","message":"JWT verified — req.user attached","role":"admin","tenantId":1,"timestamp":"2026-03-31T11:08:53.664Z","userId":1}
+{"context":"AuthController","level":"info","message":"POST /auth/login attempt","timestamp":"2026-03-31T11:08:53.670Z","username":"admin"}
+{"context":"TenantConnection","level":"debug","message":"getTenantConnection called","tenantId":"1","timestamp":"2026-03-31T11:08:53.957Z"}
+{"context":"TenantConnection","level":"debug","message":"No cached connection — creating new one","tenantId":"1","timestamp":"2026-03-31T11:08:53.958Z"}
+{"context":"TenantConnection","level":"debug","message":"connection_uri encrypted: true","timestamp":"2026-03-31T11:08:53.959Z"}
+{"context":"TenantConnection","level":"info","message":"Connecting via full URI to dpg-d75mv4juibrs73bqltrg-a.singapore-postgres.render.com/scheme_tool_db","tenantId":"1","timestamp":"2026-03-31T11:08:53.963Z"}
+{"cachedTenants":["1"],"context":"TenantConnection","level":"info","message":"DataSource initialized for tenant \"1\"","timestamp":"2026-03-31T11:08:54.992Z"}
+{"context":"AuthController","level":"info","message":"Login success — JWT issued","role":"admin","tenantId":1,"timestamp":"2026-03-31T11:08:55.369Z","username":"admin"}
+{"context":"UserMiddleware","level":"debug","message":"JWT verified — req.user attached","role":"admin","tenantId":1,"timestamp":"2026-03-31T11:08:55.461Z","userId":1}
+{"context":"RolesGuard","level":"debug","message":"Checking roles for \"GET /api/dashboard/upcoming-schemes\"","requiredRoles":["Admin","Executive","Manager","Participant"],"timestamp":"2026-03-31T11:08:55.463Z","user":{"id":1,"role":"admin","tenantId":1,"username":"admin"}}
+{"context":"RolesGuard","level":"warn","message":"DENIED — role \"admin\" not in [Admin, Executive, Manager, Participant]","path":"GET /api/dashboard/upcoming-schemes","timestamp":"2026-03-31T11:08:55.464Z","userId":1}
+{"context":"UserMiddleware","level":"debug","message":"JWT verified — req.user attached","role":"admin","tenantId":1,"timestamp":"2026-03-31T11:08:55.475Z","userId":1}
+{"context":"RolesGuard","level":"debug","message":"Checking roles for \"GET /api/dashboard/summary\"","requiredRoles":["Admin","Executive","Manager","Participant"],"timestamp":"2026-03-31T11:08:55.478Z","user":{"id":1,"role":"admin","tenantId":1,"username":"admin"}}
+{"context":"RolesGuard","level":"warn","message":"DENIED — role \"admin\" not in [Admin, Executive, Manager, Participant]","path":"GET /api/dashboard/summary","timestamp":"2026-03-31T11:08:55.479Z","userId":1}
+{"context":"UserMiddleware","level":"debug","message":"JWT verified — req.user attached","role":"admin","tenantId":1,"timestamp":"2026-03-31T11:08:55.486Z","userId":1}
+{"context":"RolesGuard","level":"debug","message":"Checking roles for \"GET /api/dashboard/upcoming-schemes\"","requiredRoles":["Admin","Executive","Manager","Participant"],"timestamp":"2026-03-31T11:08:55.488Z","user":{"id":1,"role":"admin","tenantId":1,"username":"admin"}}
+{"context":"RolesGuard","level":"warn","message":"DENIED — role \"admin\" not in [Admin, Executive, Manager, Participant]","path":"GET /api/dashboard/upcoming-schemes","timestamp":"2026-03-31T11:08:55.488Z","userId":1}
+{"context":"UserMiddleware","level":"debug","message":"JWT verified — req.user attached","role":"admin","tenantId":1,"timestamp":"2026-03-31T11:08:55.497Z","userId":1}
+{"context":"RolesGuard","level":"debug","message":"Checking roles for \"GET /api/dashboard/summary\"","requiredRoles":["Admin","Executive","Manager","Participant"],"timestamp":"2026-03-31T11:08:55.498Z","user":{"id":1,"role":"admin","tenantId":1,"username":"admin"}}
+{"context":"RolesGuard","level":"warn","message":"DENIED — role \"admin\" not in [Admin, Executive, Manager, Participant]","path":"GET /api/dashboard/summary","timestamp":"2026-03-31T11:08:55.500Z","userId":1}
+{"context":"NestFactory","level":"info","message":"Starting Nest application...","timestamp":"2026-03-31T11:26:03.570Z"}
+{"context":"InstanceLoader","level":"info","message":"AppModule dependencies initialized","timestamp":"2026-03-31T11:26:03.586Z"}
+{"context":"InstanceLoader","level":"info","message":"TypeOrmModule dependencies initialized","timestamp":"2026-03-31T11:26:03.587Z"}
+{"context":"InstanceLoader","level":"info","message":"ConfigHostModule dependencies initialized","timestamp":"2026-03-31T11:26:03.587Z"}
+{"context":"InstanceLoader","level":"info","message":"AnalyticsModule dependencies initialized","timestamp":"2026-03-31T11:26:03.587Z"}
+{"context":"InstanceLoader","level":"info","message":"DashboardModule dependencies initialized","timestamp":"2026-03-31T11:26:03.588Z"}
+{"context":"InstanceLoader","level":"info","message":"ConfigModule dependencies initialized","timestamp":"2026-03-31T11:26:03.589Z"}
+{"context":"InstanceLoader","level":"info","message":"ConfigModule dependencies initialized","timestamp":"2026-03-31T11:26:03.589Z"}
+{"context":"InstanceLoader","level":"info","message":"JwtModule dependencies initialized","timestamp":"2026-03-31T11:26:03.599Z"}
+{"context":"InstanceLoader","level":"info","message":"TypeOrmCoreModule dependencies initialized","timestamp":"2026-03-31T11:26:06.597Z"}
+{"context":"InstanceLoader","level":"info","message":"TypeOrmModule dependencies initialized","timestamp":"2026-03-31T11:26:06.599Z"}
+{"context":"InstanceLoader","level":"info","message":"TypeOrmModule dependencies initialized","timestamp":"2026-03-31T11:26:06.599Z"}
+{"context":"InstanceLoader","level":"info","message":"TypeOrmModule dependencies initialized","timestamp":"2026-03-31T11:26:06.600Z"}
+{"context":"InstanceLoader","level":"info","message":"TypeOrmModule dependencies initialized","timestamp":"2026-03-31T11:26:06.601Z"}
+{"context":"InstanceLoader","level":"info","message":"TypeOrmModule dependencies initialized","timestamp":"2026-03-31T11:26:06.601Z"}
+{"context":"InstanceLoader","level":"info","message":"TypeOrmModule dependencies initialized","timestamp":"2026-03-31T11:26:06.601Z"}
+{"context":"InstanceLoader","level":"info","message":"AuthModule dependencies initialized","timestamp":"2026-03-31T11:26:06.603Z"}
+{"context":"InstanceLoader","level":"info","message":"DatabaseModule dependencies initialized","timestamp":"2026-03-31T11:26:06.604Z"}
+{"context":"InstanceLoader","level":"info","message":"DatasetsModule dependencies initialized","timestamp":"2026-03-31T11:26:06.605Z"}
+{"context":"InstanceLoader","level":"info","message":"SettingsModule dependencies initialized","timestamp":"2026-03-31T11:26:06.605Z"}
+{"context":"InstanceLoader","level":"info","message":"RecipientsModule dependencies initialized","timestamp":"2026-03-31T11:26:06.606Z"}
+{"context":"InstanceLoader","level":"info","message":"SchemeConfigsModule dependencies initialized","timestamp":"2026-03-31T11:26:06.607Z"}
+{"context":"InstanceLoader","level":"info","message":"CustomersModule dependencies initialized","timestamp":"2026-03-31T11:26:06.608Z"}
+{"context":"InstanceLoader","level":"info","message":"MaterialsModule dependencies initialized","timestamp":"2026-03-31T11:26:06.608Z"}
+{"context":"InstanceLoader","level":"info","message":"BillingsModule dependencies initialized","timestamp":"2026-03-31T11:26:06.609Z"}
+{"context":"InstanceLoader","level":"info","message":"PaymentsModule dependencies initialized","timestamp":"2026-03-31T11:26:06.610Z"}
+{"context":"InstanceLoader","level":"info","message":"TenantsModule dependencies initialized","timestamp":"2026-03-31T11:26:06.611Z"}
+{"context":"InstanceLoader","level":"info","message":"SchemesModule dependencies initialized","timestamp":"2026-03-31T11:26:06.612Z"}
+{"context":"InstanceLoader","level":"info","message":"QueryModule dependencies initialized","timestamp":"2026-03-31T11:26:06.612Z"}
+{"context":"LegacyRouteConverter","level":"warn","message":"Unsupported route path: \"/api/*\". In previous versions, the symbols ?, *, and + were used to denote optional or repeating path parameters. The latest version of \"path-to-regexp\" now requires the use of named parameters. For example, instead of using a route like /users/* to capture all routes starting with \"/users\", you should use /users/*path. For more details, refer to the migration guide. Attempting to auto-convert...","timestamp":"2026-03-31T11:26:06.870Z"}
+{"context":"RoutesResolver","level":"info","message":"TenantsController {/api/tenants}:","timestamp":"2026-03-31T11:26:06.871Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/tenants, GET} route","timestamp":"2026-03-31T11:26:06.872Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/tenants, POST} route","timestamp":"2026-03-31T11:26:06.872Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/tenants/:id, GET} route","timestamp":"2026-03-31T11:26:06.873Z"}
+{"context":"RoutesResolver","level":"info","message":"SchemeConfigsController {/api/scheme-config}:","timestamp":"2026-03-31T11:26:06.873Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/scheme-config, GET} route","timestamp":"2026-03-31T11:26:06.873Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/scheme-config/all, GET} route","timestamp":"2026-03-31T11:26:06.874Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/scheme-config, POST} route","timestamp":"2026-03-31T11:26:06.875Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/scheme-config/:id, PUT} route","timestamp":"2026-03-31T11:26:06.877Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/scheme-config/:id, DELETE} route","timestamp":"2026-03-31T11:26:06.877Z"}
+{"context":"RoutesResolver","level":"info","message":"SchemesController {/api/schemes}:","timestamp":"2026-03-31T11:26:06.878Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/schemes, GET} route","timestamp":"2026-03-31T11:26:06.878Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/schemes/:id, GET} route","timestamp":"2026-03-31T11:26:06.879Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/schemes, POST} route","timestamp":"2026-03-31T11:26:06.879Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/schemes/:id, PUT} route","timestamp":"2026-03-31T11:26:06.879Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/schemes/:id, DELETE} route","timestamp":"2026-03-31T11:26:06.880Z"}
+{"context":"RoutesResolver","level":"info","message":"CustomersController {/api/customers}:","timestamp":"2026-03-31T11:26:06.880Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/customers, GET} route","timestamp":"2026-03-31T11:26:06.880Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/customers/:id, GET} route","timestamp":"2026-03-31T11:26:06.881Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/customers, POST} route","timestamp":"2026-03-31T11:26:06.881Z"}
+{"context":"RoutesResolver","level":"info","message":"MaterialsController {/api/materials}:","timestamp":"2026-03-31T11:26:06.881Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/materials, GET} route","timestamp":"2026-03-31T11:26:06.882Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/materials/:id, GET} route","timestamp":"2026-03-31T11:26:06.882Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/materials, POST} route","timestamp":"2026-03-31T11:26:06.882Z"}
+{"context":"RoutesResolver","level":"info","message":"BillingsController {/api/billings}:","timestamp":"2026-03-31T11:26:06.883Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/billings, GET} route","timestamp":"2026-03-31T11:26:06.883Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/billings/:id, GET} route","timestamp":"2026-03-31T11:26:06.883Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/billings, POST} route","timestamp":"2026-03-31T11:26:06.884Z"}
+{"context":"RoutesResolver","level":"info","message":"PaymentsController {/api/payments}:","timestamp":"2026-03-31T11:26:06.884Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/payments, GET} route","timestamp":"2026-03-31T11:26:06.884Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/payments/find, GET} route","timestamp":"2026-03-31T11:26:06.885Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/payments, POST} route","timestamp":"2026-03-31T11:26:06.885Z"}
+{"context":"RoutesResolver","level":"info","message":"DatasetsController {/api}:","timestamp":"2026-03-31T11:26:06.885Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/datasets, GET} route","timestamp":"2026-03-31T11:26:06.886Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/filter-values, GET} route","timestamp":"2026-03-31T11:26:06.886Z"}
+{"context":"RoutesResolver","level":"info","message":"RecipientsController {/api/recipients}:","timestamp":"2026-03-31T11:26:06.887Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/recipients, GET} route","timestamp":"2026-03-31T11:26:06.887Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/recipients/query, POST} route","timestamp":"2026-03-31T11:26:06.888Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/recipients/filter-options, GET} route","timestamp":"2026-03-31T11:26:06.889Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/recipients/types, GET} route","timestamp":"2026-03-31T11:26:06.890Z"}
+{"context":"RoutesResolver","level":"info","message":"AnalyticsController {/api/analytics}:","timestamp":"2026-03-31T11:26:06.890Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/analytics/kpis, GET} route","timestamp":"2026-03-31T11:26:06.898Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/analytics/chart, GET} route","timestamp":"2026-03-31T11:26:06.899Z"}
+{"context":"RoutesResolver","level":"info","message":"DashboardController {/api/dashboard}:","timestamp":"2026-03-31T11:26:06.900Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/dashboard/summary, GET} route","timestamp":"2026-03-31T11:26:06.900Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/dashboard/upcoming-schemes, GET} route","timestamp":"2026-03-31T11:26:06.901Z"}
+{"context":"RoutesResolver","level":"info","message":"SettingsController {/api/settings}:","timestamp":"2026-03-31T11:26:06.902Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/settings, GET} route","timestamp":"2026-03-31T11:26:06.902Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/settings, PUT} route","timestamp":"2026-03-31T11:26:06.902Z"}
+{"context":"RoutesResolver","level":"info","message":"AuthController {/api/auth}:","timestamp":"2026-03-31T11:26:06.902Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/auth/resolve-tenant, POST} route","timestamp":"2026-03-31T11:26:06.903Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/auth/login, POST} route","timestamp":"2026-03-31T11:26:06.904Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/auth/logout, POST} route","timestamp":"2026-03-31T11:26:06.904Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/auth/me, POST} route","timestamp":"2026-03-31T11:26:06.905Z"}
+{"context":"RoutesResolver","level":"info","message":"QueryController {/api/query}:","timestamp":"2026-03-31T11:26:06.905Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/query/execute, POST} route","timestamp":"2026-03-31T11:26:06.905Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/query/field-values, GET} route","timestamp":"2026-03-31T11:26:06.906Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/query/operators, GET} route","timestamp":"2026-03-31T11:26:06.906Z"}
+{"context":"NestApplication","level":"info","message":"Nest application successfully started","timestamp":"2026-03-31T11:26:06.919Z"}
+{"context":"UserMiddleware","level":"debug","message":"JWT verified — req.user attached","role":"admin","tenantId":1,"timestamp":"2026-03-31T11:26:27.443Z","userId":1}
+{"context":"UserMiddleware","level":"debug","message":"JWT verified — req.user attached","role":"admin","tenantId":1,"timestamp":"2026-03-31T11:26:27.462Z","userId":1}
+{"context":"UserMiddleware","level":"debug","message":"JWT verified — req.user attached","role":"admin","tenantId":1,"timestamp":"2026-03-31T11:26:27.474Z","userId":1}
+{"context":"RolesGuard","level":"debug","message":"No @Roles() on handler — open access","timestamp":"2026-03-31T11:26:27.478Z"}
+{"context":"UserMiddleware","level":"debug","message":"JWT verified — req.user attached","role":"admin","tenantId":1,"timestamp":"2026-03-31T11:26:29.080Z","userId":1}
+{"context":"RolesGuard","level":"debug","message":"Checking roles for \"GET /api/dashboard/upcoming-schemes\"","requiredRoles":["Admin","Executive","Manager","Participant"],"timestamp":"2026-03-31T11:26:29.081Z","user":{"id":1,"role":"admin","tenantId":1,"username":"admin"}}
+{"context":"RolesGuard","level":"warn","message":"DENIED — role \"admin\" not in [Admin, Executive, Manager, Participant]","path":"GET /api/dashboard/upcoming-schemes","timestamp":"2026-03-31T11:26:29.082Z","userId":1}
+{"context":"UserMiddleware","level":"debug","message":"JWT verified — req.user attached","role":"admin","tenantId":1,"timestamp":"2026-03-31T11:26:29.086Z","userId":1}
+{"context":"RolesGuard","level":"debug","message":"Checking roles for \"GET /api/dashboard/summary\"","requiredRoles":["Admin","Executive","Manager","Participant"],"timestamp":"2026-03-31T11:26:29.086Z","user":{"id":1,"role":"admin","tenantId":1,"username":"admin"}}
+{"context":"RolesGuard","level":"warn","message":"DENIED — role \"admin\" not in [Admin, Executive, Manager, Participant]","path":"GET /api/dashboard/summary","timestamp":"2026-03-31T11:26:29.087Z","userId":1}
+{"context":"UserMiddleware","level":"debug","message":"JWT verified — req.user attached","role":"admin","tenantId":1,"timestamp":"2026-03-31T11:26:29.093Z","userId":1}
+{"context":"RolesGuard","level":"debug","message":"Checking roles for \"GET /api/dashboard/upcoming-schemes\"","requiredRoles":["Admin","Executive","Manager","Participant"],"timestamp":"2026-03-31T11:26:29.094Z","user":{"id":1,"role":"admin","tenantId":1,"username":"admin"}}
+{"context":"RolesGuard","level":"warn","message":"DENIED — role \"admin\" not in [Admin, Executive, Manager, Participant]","path":"GET /api/dashboard/upcoming-schemes","timestamp":"2026-03-31T11:26:29.094Z","userId":1}
+{"context":"UserMiddleware","level":"debug","message":"JWT verified — req.user attached","role":"admin","tenantId":1,"timestamp":"2026-03-31T11:26:29.098Z","userId":1}
+{"context":"RolesGuard","level":"debug","message":"Checking roles for \"GET /api/dashboard/summary\"","requiredRoles":["Admin","Executive","Manager","Participant"],"timestamp":"2026-03-31T11:26:29.099Z","user":{"id":1,"role":"admin","tenantId":1,"username":"admin"}}
+{"context":"RolesGuard","level":"warn","message":"DENIED — role \"admin\" not in [Admin, Executive, Manager, Participant]","path":"GET /api/dashboard/summary","timestamp":"2026-03-31T11:26:29.100Z","userId":1}
+{"context":"UserMiddleware","level":"debug","message":"JWT verified — req.user attached","role":"admin","tenantId":1,"timestamp":"2026-03-31T11:26:36.566Z","userId":1}
+{"context":"UserMiddleware","level":"debug","message":"JWT verified — req.user attached","role":"admin","tenantId":1,"timestamp":"2026-03-31T11:26:36.569Z","userId":1}
+{"context":"UserMiddleware","level":"debug","message":"JWT verified — req.user attached","role":"admin","tenantId":1,"timestamp":"2026-03-31T11:26:36.609Z","userId":1}
+{"context":"RolesGuard","level":"debug","message":"No @Roles() on handler — open access","timestamp":"2026-03-31T11:26:36.611Z"}
+{"context":"UserMiddleware","level":"debug","message":"JWT verified — req.user attached","role":"admin","tenantId":1,"timestamp":"2026-03-31T11:26:36.915Z","userId":1}
+{"context":"RolesGuard","level":"debug","message":"Checking roles for \"GET /api/dashboard/upcoming-schemes\"","requiredRoles":["Admin","Executive","Manager","Participant"],"timestamp":"2026-03-31T11:26:36.917Z","user":{"id":1,"role":"admin","tenantId":1,"username":"admin"}}
+{"context":"RolesGuard","level":"warn","message":"DENIED — role \"admin\" not in [Admin, Executive, Manager, Participant]","path":"GET /api/dashboard/upcoming-schemes","timestamp":"2026-03-31T11:26:36.917Z","userId":1}
+{"context":"UserMiddleware","level":"debug","message":"JWT verified — req.user attached","role":"admin","tenantId":1,"timestamp":"2026-03-31T11:26:36.921Z","userId":1}
+{"context":"RolesGuard","level":"debug","message":"Checking roles for \"GET /api/dashboard/summary\"","requiredRoles":["Admin","Executive","Manager","Participant"],"timestamp":"2026-03-31T11:26:36.921Z","user":{"id":1,"role":"admin","tenantId":1,"username":"admin"}}
+{"context":"RolesGuard","level":"warn","message":"DENIED — role \"admin\" not in [Admin, Executive, Manager, Participant]","path":"GET /api/dashboard/summary","timestamp":"2026-03-31T11:26:36.922Z","userId":1}
+{"context":"UserMiddleware","level":"debug","message":"JWT verified — req.user attached","role":"admin","tenantId":1,"timestamp":"2026-03-31T11:26:36.926Z","userId":1}
+{"context":"RolesGuard","level":"debug","message":"Checking roles for \"GET /api/dashboard/upcoming-schemes\"","requiredRoles":["Admin","Executive","Manager","Participant"],"timestamp":"2026-03-31T11:26:36.927Z","user":{"id":1,"role":"admin","tenantId":1,"username":"admin"}}
+{"context":"RolesGuard","level":"warn","message":"DENIED — role \"admin\" not in [Admin, Executive, Manager, Participant]","path":"GET /api/dashboard/upcoming-schemes","timestamp":"2026-03-31T11:26:36.927Z","userId":1}
+{"context":"UserMiddleware","level":"debug","message":"JWT verified — req.user attached","role":"admin","tenantId":1,"timestamp":"2026-03-31T11:26:36.930Z","userId":1}
+{"context":"RolesGuard","level":"debug","message":"Checking roles for \"GET /api/dashboard/summary\"","requiredRoles":["Admin","Executive","Manager","Participant"],"timestamp":"2026-03-31T11:26:36.931Z","user":{"id":1,"role":"admin","tenantId":1,"username":"admin"}}
+{"context":"RolesGuard","level":"warn","message":"DENIED — role \"admin\" not in [Admin, Executive, Manager, Participant]","path":"GET /api/dashboard/summary","timestamp":"2026-03-31T11:26:36.931Z","userId":1}
+{"context":"UserMiddleware","level":"debug","message":"JWT verified — req.user attached","role":"admin","tenantId":1,"timestamp":"2026-03-31T11:26:39.489Z","userId":1}
+{"context":"AuthController","level":"info","message":"Logout — cookie cleared","timestamp":"2026-03-31T11:26:39.498Z"}
+{"context":"UserMiddleware","level":"debug","message":"Anonymous request — no auth cookie","timestamp":"2026-03-31T11:26:43.359Z"}
+{"context":"AuthController","level":"info","message":"Tenant resolved by slug","slug":"acme","tenantId":1,"timestamp":"2026-03-31T11:26:43.608Z"}
+{"context":"UserMiddleware","level":"debug","message":"Anonymous request — no auth cookie","timestamp":"2026-03-31T11:26:55.913Z"}
+{"context":"AuthController","level":"info","message":"POST /auth/login attempt","timestamp":"2026-03-31T11:26:55.918Z","username":"admin"}
+{"context":"TenantConnection","level":"debug","message":"getTenantConnection called","tenantId":"1","timestamp":"2026-03-31T11:26:58.332Z"}
+{"context":"TenantConnection","level":"debug","message":"No cached connection — creating new one","tenantId":"1","timestamp":"2026-03-31T11:26:58.333Z"}
+{"context":"TenantConnection","level":"debug","message":"connection_uri encrypted: true","timestamp":"2026-03-31T11:26:58.334Z"}
+{"context":"TenantConnection","level":"info","message":"Connecting via full URI to dpg-d75mv4juibrs73bqltrg-a.singapore-postgres.render.com/scheme_tool_db","tenantId":"1","timestamp":"2026-03-31T11:26:58.337Z"}
+{"cachedTenants":["1"],"context":"TenantConnection","level":"info","message":"DataSource initialized for tenant \"1\"","timestamp":"2026-03-31T11:26:59.719Z"}
+{"context":"AuthController","level":"info","message":"Login success — JWT issued","role":"Admin","tenantId":1,"timestamp":"2026-03-31T11:27:00.698Z","username":"admin"}
+{"context":"UserMiddleware","level":"debug","message":"JWT verified — req.user attached","role":"Admin","tenantId":1,"timestamp":"2026-03-31T11:27:00.778Z","userId":1}
+{"context":"RolesGuard","level":"debug","message":"Checking roles for \"GET /api/dashboard/upcoming-schemes\"","requiredRoles":["Admin","Executive","Manager","Participant"],"timestamp":"2026-03-31T11:27:00.779Z","user":{"id":1,"role":"Admin","tenantId":1,"username":"admin"}}
+{"context":"RolesGuard","level":"debug","message":"ALLOWED — role \"Admin\" passed for GET /api/dashboard/upcoming-schemes","timestamp":"2026-03-31T11:27:00.780Z"}
+{"context":"UserMiddleware","level":"debug","message":"JWT verified — req.user attached","role":"Admin","tenantId":1,"timestamp":"2026-03-31T11:27:00.787Z","userId":1}
+{"context":"RolesGuard","level":"debug","message":"Checking roles for \"GET /api/dashboard/summary\"","requiredRoles":["Admin","Executive","Manager","Participant"],"timestamp":"2026-03-31T11:27:00.788Z","user":{"id":1,"role":"Admin","tenantId":1,"username":"admin"}}
+{"context":"RolesGuard","level":"debug","message":"ALLOWED — role \"Admin\" passed for GET /api/dashboard/summary","timestamp":"2026-03-31T11:27:00.788Z"}
+{"context":"UserMiddleware","level":"debug","message":"JWT verified — req.user attached","role":"Admin","tenantId":1,"timestamp":"2026-03-31T11:27:00.792Z","userId":1}
+{"context":"RolesGuard","level":"debug","message":"Checking roles for \"GET /api/dashboard/upcoming-schemes\"","requiredRoles":["Admin","Executive","Manager","Participant"],"timestamp":"2026-03-31T11:27:00.793Z","user":{"id":1,"role":"Admin","tenantId":1,"username":"admin"}}
+{"context":"RolesGuard","level":"debug","message":"ALLOWED — role \"Admin\" passed for GET /api/dashboard/upcoming-schemes","timestamp":"2026-03-31T11:27:00.794Z"}
+{"context":"UserMiddleware","level":"debug","message":"JWT verified — req.user attached","role":"Admin","tenantId":1,"timestamp":"2026-03-31T11:27:00.799Z","userId":1}
+{"context":"RolesGuard","level":"debug","message":"Checking roles for \"GET /api/dashboard/summary\"","requiredRoles":["Admin","Executive","Manager","Participant"],"timestamp":"2026-03-31T11:27:00.800Z","user":{"id":1,"role":"Admin","tenantId":1,"username":"admin"}}
+{"context":"RolesGuard","level":"debug","message":"ALLOWED — role \"Admin\" passed for GET /api/dashboard/summary","timestamp":"2026-03-31T11:27:00.801Z"}
+{"context":"UserMiddleware","level":"debug","message":"JWT verified — req.user attached","role":"Admin","tenantId":1,"timestamp":"2026-03-31T11:27:04.596Z","userId":1}
+{"context":"DatabaseModule","level":"debug","message":"TENANT_CONNECTION factory triggered","tenantId":"1","timestamp":"2026-03-31T11:27:04.599Z"}
+{"context":"DatabaseModule","level":"debug","message":"Tenant found: \"Acme\" (id=1)","timestamp":"2026-03-31T11:27:04.841Z"}
+{"context":"TenantConnection","level":"debug","message":"getTenantConnection called","tenantId":"1","timestamp":"2026-03-31T11:27:04.841Z"}
+{"context":"TenantConnection","initialized":true,"level":"debug","message":"Using cached connection","tenantId":"1","timestamp":"2026-03-31T11:27:04.842Z"}
+{"context":"DatabaseModule","level":"info","message":"TENANT_CONNECTION ready for \"Acme\"","timestamp":"2026-03-31T11:27:04.843Z"}
+{"context":"RolesGuard","level":"debug","message":"Checking roles for \"GET /api/datasets\"","requiredRoles":["Admin","Executive","Manager","Participant"],"timestamp":"2026-03-31T11:27:04.845Z","user":{"id":1,"role":"Admin","tenantId":1,"username":"admin"}}
+{"context":"RolesGuard","level":"debug","message":"ALLOWED — role \"Admin\" passed for GET /api/datasets","timestamp":"2026-03-31T11:27:04.846Z"}
+{"context":"UserMiddleware","level":"debug","message":"JWT verified — req.user attached","role":"Admin","tenantId":1,"timestamp":"2026-03-31T11:27:04.852Z","userId":1}
+{"context":"DatabaseModule","level":"debug","message":"TENANT_CONNECTION factory triggered","tenantId":"1","timestamp":"2026-03-31T11:27:04.853Z"}
+{"context":"DatabaseModule","level":"debug","message":"Tenant found: \"Acme\" (id=1)","timestamp":"2026-03-31T11:27:07.137Z"}
+{"context":"TenantConnection","level":"debug","message":"getTenantConnection called","tenantId":"1","timestamp":"2026-03-31T11:27:07.138Z"}
+{"context":"TenantConnection","initialized":true,"level":"debug","message":"Using cached connection","tenantId":"1","timestamp":"2026-03-31T11:27:07.138Z"}
+{"context":"DatabaseModule","level":"info","message":"TENANT_CONNECTION ready for \"Acme\"","timestamp":"2026-03-31T11:27:07.139Z"}
+{"context":"RolesGuard","level":"debug","message":"Checking roles for \"GET /api/datasets\"","requiredRoles":["Admin","Executive","Manager","Participant"],"timestamp":"2026-03-31T11:27:07.140Z","user":{"id":1,"role":"Admin","tenantId":1,"username":"admin"}}
+{"context":"RolesGuard","level":"debug","message":"ALLOWED — role \"Admin\" passed for GET /api/datasets","timestamp":"2026-03-31T11:27:07.141Z"}
+{"context":"UserMiddleware","level":"debug","message":"JWT verified — req.user attached","role":"Admin","tenantId":1,"timestamp":"2026-03-31T11:27:07.159Z","userId":1}
+{"context":"DatabaseModule","level":"debug","message":"TENANT_CONNECTION factory triggered","tenantId":"1","timestamp":"2026-03-31T11:27:07.161Z"}
+{"context":"DatabaseModule","level":"debug","message":"Tenant found: \"Acme\" (id=1)","timestamp":"2026-03-31T11:27:07.401Z"}
+{"context":"TenantConnection","level":"debug","message":"getTenantConnection called","tenantId":"1","timestamp":"2026-03-31T11:27:07.402Z"}
+{"context":"TenantConnection","initialized":true,"level":"debug","message":"Using cached connection","tenantId":"1","timestamp":"2026-03-31T11:27:07.403Z"}
+{"context":"DatabaseModule","level":"info","message":"TENANT_CONNECTION ready for \"Acme\"","timestamp":"2026-03-31T11:27:07.404Z"}
+{"context":"UserMiddleware","level":"debug","message":"JWT verified — req.user attached","role":"Admin","tenantId":1,"timestamp":"2026-03-31T11:27:10.770Z","userId":1}
+{"context":"DatabaseModule","level":"debug","message":"TENANT_CONNECTION factory triggered","tenantId":"1","timestamp":"2026-03-31T11:27:10.771Z"}
+{"context":"UserMiddleware","level":"debug","message":"JWT verified — req.user attached","role":"Admin","tenantId":1,"timestamp":"2026-03-31T11:27:10.774Z","userId":1}
+{"context":"DatabaseModule","level":"debug","message":"TENANT_CONNECTION factory triggered","tenantId":"1","timestamp":"2026-03-31T11:27:10.775Z"}
+{"context":"UserMiddleware","level":"debug","message":"JWT verified — req.user attached","role":"Admin","tenantId":1,"timestamp":"2026-03-31T11:27:10.780Z","userId":1}
+{"context":"DatabaseModule","level":"debug","message":"TENANT_CONNECTION factory triggered","tenantId":"1","timestamp":"2026-03-31T11:27:10.781Z"}
+{"context":"DatabaseModule","level":"debug","message":"Tenant found: \"Acme\" (id=1)","timestamp":"2026-03-31T11:27:11.012Z"}
+{"context":"TenantConnection","level":"debug","message":"getTenantConnection called","tenantId":"1","timestamp":"2026-03-31T11:27:11.013Z"}
+{"context":"TenantConnection","initialized":true,"level":"debug","message":"Using cached connection","tenantId":"1","timestamp":"2026-03-31T11:27:11.014Z"}
+{"context":"DatabaseModule","level":"info","message":"TENANT_CONNECTION ready for \"Acme\"","timestamp":"2026-03-31T11:27:11.014Z"}
+{"context":"RolesGuard","level":"debug","message":"Checking roles for \"GET /api/query/operators\"","requiredRoles":["Admin","Executive","Manager","Participant"],"timestamp":"2026-03-31T11:27:11.016Z","user":{"id":1,"role":"Admin","tenantId":1,"username":"admin"}}
+{"context":"RolesGuard","level":"debug","message":"ALLOWED — role \"Admin\" passed for GET /api/query/operators","timestamp":"2026-03-31T11:27:11.017Z"}
+{"context":"UserMiddleware","level":"debug","message":"JWT verified — req.user attached","role":"Admin","tenantId":1,"timestamp":"2026-03-31T11:27:11.023Z","userId":1}
+{"context":"DatabaseModule","level":"debug","message":"TENANT_CONNECTION factory triggered","tenantId":"1","timestamp":"2026-03-31T11:27:11.025Z"}
+{"context":"DatabaseModule","level":"debug","message":"Tenant found: \"Acme\" (id=1)","timestamp":"2026-03-31T11:27:11.263Z"}
+{"context":"TenantConnection","level":"debug","message":"getTenantConnection called","tenantId":"1","timestamp":"2026-03-31T11:27:11.264Z"}
+{"context":"TenantConnection","initialized":true,"level":"debug","message":"Using cached connection","tenantId":"1","timestamp":"2026-03-31T11:27:11.264Z"}
+{"context":"DatabaseModule","level":"info","message":"TENANT_CONNECTION ready for \"Acme\"","timestamp":"2026-03-31T11:27:11.264Z"}
+{"context":"RolesGuard","level":"debug","message":"Checking roles for \"GET /api/query/operators\"","requiredRoles":["Admin","Executive","Manager","Participant"],"timestamp":"2026-03-31T11:27:11.265Z","user":{"id":1,"role":"Admin","tenantId":1,"username":"admin"}}
+{"context":"RolesGuard","level":"debug","message":"ALLOWED — role \"Admin\" passed for GET /api/query/operators","timestamp":"2026-03-31T11:27:11.266Z"}
+{"context":"DatabaseModule","level":"debug","message":"Tenant found: \"Acme\" (id=1)","timestamp":"2026-03-31T11:27:12.328Z"}
+{"context":"TenantConnection","level":"debug","message":"getTenantConnection called","tenantId":"1","timestamp":"2026-03-31T11:27:12.329Z"}
+{"context":"TenantConnection","initialized":true,"level":"debug","message":"Using cached connection","tenantId":"1","timestamp":"2026-03-31T11:27:12.330Z"}
+{"context":"DatabaseModule","level":"info","message":"TENANT_CONNECTION ready for \"Acme\"","timestamp":"2026-03-31T11:27:12.330Z"}
+{"context":"RolesGuard","level":"debug","message":"Checking roles for \"GET /api/recipients/types\"","requiredRoles":["Admin","Executive","Manager","Participant"],"timestamp":"2026-03-31T11:27:12.332Z","user":{"id":1,"role":"Admin","tenantId":1,"username":"admin"}}
+{"context":"RolesGuard","level":"debug","message":"ALLOWED — role \"Admin\" passed for GET /api/recipients/types","timestamp":"2026-03-31T11:27:12.333Z"}
+{"context":"UserMiddleware","level":"debug","message":"JWT verified — req.user attached","role":"Admin","tenantId":1,"timestamp":"2026-03-31T11:27:12.339Z","userId":1}
+{"context":"DatabaseModule","level":"debug","message":"TENANT_CONNECTION factory triggered","tenantId":"1","timestamp":"2026-03-31T11:27:12.340Z"}
+{"context":"DatabaseModule","level":"debug","message":"Tenant found: \"Acme\" (id=1)","timestamp":"2026-03-31T11:27:12.587Z"}
+{"context":"TenantConnection","level":"debug","message":"getTenantConnection called","tenantId":"1","timestamp":"2026-03-31T11:27:12.587Z"}
+{"context":"TenantConnection","initialized":true,"level":"debug","message":"Using cached connection","tenantId":"1","timestamp":"2026-03-31T11:27:12.588Z"}
+{"context":"DatabaseModule","level":"info","message":"TENANT_CONNECTION ready for \"Acme\"","timestamp":"2026-03-31T11:27:12.588Z"}
+{"context":"RolesGuard","level":"debug","message":"Checking roles for \"GET /api/recipients/types\"","requiredRoles":["Admin","Executive","Manager","Participant"],"timestamp":"2026-03-31T11:27:12.589Z","user":{"id":1,"role":"Admin","tenantId":1,"username":"admin"}}
+{"context":"RolesGuard","level":"debug","message":"ALLOWED — role \"Admin\" passed for GET /api/recipients/types","timestamp":"2026-03-31T11:27:12.589Z"}
+{"context":"DatabaseModule","level":"debug","message":"Tenant found: \"Acme\" (id=1)","timestamp":"2026-03-31T11:27:13.010Z"}
+{"context":"TenantConnection","level":"debug","message":"getTenantConnection called","tenantId":"1","timestamp":"2026-03-31T11:27:13.011Z"}
+{"context":"TenantConnection","initialized":true,"level":"debug","message":"Using cached connection","tenantId":"1","timestamp":"2026-03-31T11:27:13.012Z"}
+{"context":"DatabaseModule","level":"info","message":"TENANT_CONNECTION ready for \"Acme\"","timestamp":"2026-03-31T11:27:13.012Z"}
+{"context":"UserMiddleware","level":"debug","message":"JWT verified — req.user attached","role":"Admin","tenantId":1,"timestamp":"2026-03-31T11:27:13.099Z","userId":1}
+{"context":"DatabaseModule","level":"debug","message":"TENANT_CONNECTION factory triggered","tenantId":"1","timestamp":"2026-03-31T11:27:13.101Z"}
+{"context":"DatabaseModule","level":"debug","message":"Tenant found: \"Acme\" (id=1)","timestamp":"2026-03-31T11:27:13.339Z"}
+{"context":"TenantConnection","level":"debug","message":"getTenantConnection called","tenantId":"1","timestamp":"2026-03-31T11:27:13.340Z"}
+{"context":"TenantConnection","initialized":true,"level":"debug","message":"Using cached connection","tenantId":"1","timestamp":"2026-03-31T11:27:13.341Z"}
+{"context":"DatabaseModule","level":"info","message":"TENANT_CONNECTION ready for \"Acme\"","timestamp":"2026-03-31T11:27:13.342Z"}
+{"context":"UserMiddleware","level":"debug","message":"JWT verified — req.user attached","role":"Admin","tenantId":1,"timestamp":"2026-03-31T11:27:13.657Z","userId":1}
+{"context":"DatabaseModule","level":"debug","message":"TENANT_CONNECTION factory triggered","tenantId":"1","timestamp":"2026-03-31T11:27:13.659Z"}
+{"context":"DatabaseModule","level":"debug","message":"Tenant found: \"Acme\" (id=1)","timestamp":"2026-03-31T11:27:13.915Z"}
+{"context":"TenantConnection","level":"debug","message":"getTenantConnection called","tenantId":"1","timestamp":"2026-03-31T11:27:13.916Z"}
+{"context":"TenantConnection","initialized":true,"level":"debug","message":"Using cached connection","tenantId":"1","timestamp":"2026-03-31T11:27:13.917Z"}
+{"context":"DatabaseModule","level":"info","message":"TENANT_CONNECTION ready for \"Acme\"","timestamp":"2026-03-31T11:27:13.917Z"}
+{"context":"RolesGuard","level":"debug","message":"Checking roles for \"POST /api/recipients/query\"","requiredRoles":["Admin","Executive","Manager"],"timestamp":"2026-03-31T11:27:13.918Z","user":{"id":1,"role":"Admin","tenantId":1,"username":"admin"}}
+{"context":"RolesGuard","level":"debug","message":"ALLOWED — role \"Admin\" passed for POST /api/recipients/query","timestamp":"2026-03-31T11:27:13.919Z"}

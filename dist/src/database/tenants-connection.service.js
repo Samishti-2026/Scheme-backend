@@ -42,31 +42,41 @@ let TenantsConnectionService = class TenantsConnectionService {
         const isEnc = this.cryptoService.isEncrypted(connectionUri);
         winston_logger_1.winstonInstance.debug(`connection_uri encrypted: ${isEnc}`, { context: CTX });
         const decrypted = isEnc ? this.cryptoService.decrypt(connectionUri) : connectionUri;
-        let activeDbName = decrypted;
-        if (decrypted?.startsWith('postgresql://') || decrypted?.startsWith('postgres://')) {
-            activeDbName = new URL(decrypted).pathname.replace('/', '');
-            winston_logger_1.winstonInstance.debug(`Extracted DB name from URI: "${activeDbName}"`, { context: CTX });
+        const isFullUri = decrypted?.startsWith('postgresql://') || decrypted?.startsWith('postgres://');
+        let options;
+        if (isFullUri) {
+            const parsed = new URL(decrypted);
+            winston_logger_1.winstonInstance.info(`Connecting via full URI to ${parsed.hostname}${parsed.pathname}`, { context: CTX, tenantId });
+            options = {
+                type: 'postgres',
+                url: decrypted,
+                ssl: { rejectUnauthorized: false },
+                entities: [scheme_entity_1.Scheme, scheme_config_entity_1.SchemeConfig, customer_entity_1.Customer, material_entity_1.Material, billing_entity_1.Billing, payment_entity_1.Payment],
+                synchronize: false,
+            };
         }
-        activeDbName = activeDbName || `tenant_${tenantId}`;
-        await this.ensureDatabaseExists(activeDbName);
-        const host = this.configService.get('DB_HOST', 'localhost');
-        const port = this.configService.get('DB_PORT', 5432);
-        const user = this.configService.get('DB_USERNAME', 'postgres');
-        winston_logger_1.winstonInstance.info(`Connecting to ${host}:${port}/${activeDbName}`, { context: CTX, tenantId });
-        const options = {
-            type: 'postgres',
-            host,
-            port,
-            username: user,
-            password: this.configService.get('DB_PASSWORD', 'postgres'),
-            database: activeDbName,
-            entities: [scheme_entity_1.Scheme, scheme_config_entity_1.SchemeConfig, customer_entity_1.Customer, material_entity_1.Material, billing_entity_1.Billing, payment_entity_1.Payment],
-            synchronize: false,
-        };
+        else {
+            const activeDbName = decrypted || `tenant_${tenantId}`;
+            await this.ensureDatabaseExists(activeDbName);
+            const host = this.configService.get('DB_HOST', 'localhost');
+            const port = this.configService.get('DB_PORT', 5432);
+            const user = this.configService.get('DB_USERNAME', 'postgres');
+            winston_logger_1.winstonInstance.info(`Connecting to ${host}:${port}/${activeDbName}`, { context: CTX, tenantId });
+            options = {
+                type: 'postgres',
+                host,
+                port,
+                username: user,
+                password: this.configService.get('DB_PASSWORD', 'postgres'),
+                database: activeDbName,
+                entities: [scheme_entity_1.Scheme, scheme_config_entity_1.SchemeConfig, customer_entity_1.Customer, material_entity_1.Material, billing_entity_1.Billing, payment_entity_1.Payment],
+                synchronize: false,
+            };
+        }
         const dataSource = new typeorm_1.DataSource(options);
         await dataSource.initialize();
         this.connections.set(tenantId, dataSource);
-        winston_logger_1.winstonInstance.info(`DataSource initialized for tenant "${tenantId}" → DB "${activeDbName}"`, {
+        winston_logger_1.winstonInstance.info(`DataSource initialized for tenant "${tenantId}"`, {
             context: CTX,
             cachedTenants: [...this.connections.keys()],
         });
