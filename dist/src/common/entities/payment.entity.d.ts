@@ -1,0 +1,32 @@
+export declare class Payment {
+    company_code: number;
+    bill_doc: number;
+    customer_number: number;
+    accounting_document: number;
+    item_num: number;
+    special_gl_indicator: string;
+    clearing_date: Date;
+    clearing_document: number;
+    assignment_number: number;
+    fiscal_year: number;
+    posting_date: Date;
+    document_date: Date;
+    entry_date: Date;
+    currency: string;
+    local_currency: string;
+    reference_document_number: string;
+    document_type: string;
+    fiscal_period: number;
+    posting_key: number;
+    debit_credit_indicator: string;
+    business_area: number;
+    tax_code: string;
+    item_text: string;
+    branch: number;
+    baseline_date: Date;
+    terms_of_payment: string;
+    amount: number;
+    inv_ref: number;
+    inv_year: number;
+    inv_item: number;
+}

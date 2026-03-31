@@ -1,0 +1,36 @@
+export declare class Material {
+    material: number;
+    old_matl_number: string;
+    material_description: string;
+    uom: string;
+    plant: number;
+    material_type: string;
+    material_group: number;
+    ext_matl_group: string;
+    gross_weight: number;
+    net_weight: number;
+    unit_of_weight: string;
+    volume: number;
+    basic_material: string;
+    manufacturer_book_part_number: string;
+    medium: string;
+    sales_org: number;
+    dist_channel: number;
+    division: number;
+    material_price_grp: string;
+    acct_assmt_grp_mat: number;
+    item_category_group: string;
+    volume_rebate_group: string;
+    commission_group: string;
+    material_group_1: string;
+    material_group_2: string;
+    material_group_3: string;
+    material_group_4: string;
+    material_group_5: string;
+    material_freight_grp: string;
+    profit_center: string;
+    control_code: number;
+    intrastat_group: string;
+    cas_number_pharm: string;
+    prodcom_no: string;
+}
